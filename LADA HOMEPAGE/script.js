@@ -3,6 +3,8 @@
 (function(){
     const spanEl = document.querySelector("main h2 span");
     const txtArr = ['A B Ladder', 'UI Interface', 'Logging', 'Motion Control', 'Simulation'];
+    const IndexbgImageEl = document.querySelector('main');
+    const imageArr = ['images/seven.png','images/PLC.png', 'images/ROBOT.jpg', 'images/SENSOR.jpg', 'images/TheSun.jpg' ];
     let index = 0;
     let currentTxt = txtArr[index].split(""); 
     function writeTxt(){
@@ -12,6 +14,26 @@
       }else{
         currentTxt = spanEl.textContent.split("");
         setTimeout(deleteTxt, 3000);
+
+        imageArr.values
+        IndexbgImageEl.style.width='100%';
+        IndexbgImageEl.style.height='100vh';
+        IndexbgImageEl.style.color='white';
+
+        if(index==0){IndexbgImageEl.style.background='linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('+'images/seven.png'+') center center';}
+        if(index==1){IndexbgImageEl.style.background='linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('+'images/PLC.png'+') center center';}
+        if(index==2){IndexbgImageEl.style.background='linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('+'images/SENSOR.jpg'+') center center';}
+        if(index==3){IndexbgImageEl.style.background='linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('+'images/ROBOT.jpg'+') center center';}
+        if(index==4){IndexbgImageEl.style.background='linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('+'images/TheSun.jpg'+') center center';}
+
+        IndexbgImageEl.style.backgroundSize='cover';
+        IndexbgImageEl.style.display='flex';
+        IndexbgImageEl.style.justifycontent='center';
+        IndexbgImageEl.style.alignitems='center';
+        IndexbgImageEl.style.textAlign='center';
+
+        
+
       }
     }
     function deleteTxt(){
