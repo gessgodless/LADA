@@ -2,7 +2,7 @@
 // 텍스트 작성과 삭제 즉시 실행 함수
 (function(){
     const spanEl = document.querySelector("main h2 span");
-    const txtArr = ['A B Ladder', 'UI Interface', 'Logging', 'Motion Control', 'Simulation'];
+    const txtArr = ['A B LADDER', 'UI Interface', 'Logging', 'Motion Control', 'Simulation'];
     const IndexbgImageEl = document.querySelector('main');
     const imageArr = ['images/seven.png','images/PLC.png', 'images/ROBOT.jpg', 'images/SENSOR.jpg', 'images/TheSun.jpg' ];
     let index = 0;
